@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:ital,wght@0,200;1,300;1,600&family=Roboto&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  height : 100%;
+}
+body{
+  background: url(https://cdn.pixabay.com/photo/2017/07/19/01/41/clouds-2517653_640.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow : hidden;
+  height : 100%;
+  font-family: 'Poppins',sans-serif;
+  color: white;
+}
+.container{
+  padding  : 20px 70px;
+  color: white;
+}
+.current_info{
+   display : flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.date_container .time{
+  font-size: 70px;
+  font-weight: 100;
+}
+.date_container #am_pm{
+  font-size: 30px;
+  /* margin-left: 7px; */
+}
+.date_container .date{
+  font-size: 30px;
+}
+.place_container{
+  text-align: end;
+}
+.place_container .time_zone{
+  font-size: 30px;
+  font-weight: 100;
+}
+.place_container .country{
+  font-size: 20px;
+  font-weight: 700;
+}
+.current_info .others{
+  display: flex;
+  flex-direction: column;
+  background : rgba(24,24,27,0.6);
+  padding : 20px;
+  border-radius: 10px;
+  margin : 10px 0;
+  border: 1px solid white;
+}
+.current_info .others .weather_item{
+   display: flex;
+   justify-content: space-between;
+}
+.future_forecast{
+  background: rgba(24,24,27,0.8);
+  padding: 45px;
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  justify-content: space-evenly;
+  overflow-y: hidden;
+  align-items: center;
+}
+.future_forecast .today{
+  display: flex;
+  align-items:center;
+  justify-content : center;
+  border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 25px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2)
+}
+.future_forecast .today .other .day{
+  padding : 10px 15px;
+  background : black;
+  border-radius: 50px;
+  text-align: center;
+}
+.future_forecast .today .temp{
+  font-size: 25px;
+  padding-top: 15px;
+}
+.future_forecast .weather_forecast{
+  display : flex;
+}
+.weather_forecast .weather_forecast_item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 10px;
+  background :url(https://cdn.pixabay.com/photo/2021/05/10/14/48/rain-6243559_640.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  /* text-align: center; */
+  border : 1px solid white;
+  padding: 5px;
+}
+.weather_forecast .weather_forecast_item .day{
+  padding : 5px 15px;
+  background : black;
+  border-radius: 50px;
+  text-align: center;
+}
+.weather_forecast .weather_forecast_item .temp{
+  font-weight: 100;
+  background: rgba(24,24,27,0.8);
+  border-radius: 5px;
+}
+@media only screen and (max-width : 1000px){
+.future_forecast{
+  justify-content: start;
+  /* height: 30vh; */
+  align-items: none;
+  overflow-x: scroll;
+  /* font-size: 4vh; */
+}
+.current_info{
+  font-size: 3vh;
+}
+/* .date_container .time{
+  font-size: 60px;
+}
+.date_container .date{
+  font-size: 60px;
+}*/
+.date_container .others{
+  margin-top: 5vh;
+}
+.date_container{
+  font-size: 3vh;
+}
+.current_info .place_container .country{
+  font-size: 3vh;
+}
+.current_info .place_container  .time_zone{
+  margin-top: 2vh;
+  font-size: 3vh;
+}
+
+}
+@media only screen and (max-height : 600px){
+  .current_info{
+    font-size: 3vh;
+  }
+  .future_forecast{
+    height : 30vh;
+    font-size: 1.5vh;
+    /* justify-content: start; */
+    align-items: none;
+  }
+}
