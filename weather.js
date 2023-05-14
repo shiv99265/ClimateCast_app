@@ -78,7 +78,7 @@ function showWeatherData(data){
     data.list.forEach((day,idx) =>{
          if(idx==0){
            currentTempEl.innerHTML = `
-           <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" class = "w_icon">
+           <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" class = "w_icon">
            <div class="other">
              <div class="day">${window.moment(day.dt*1000).format('ddd')}</div>
              <div class="temp">
@@ -93,7 +93,7 @@ function showWeatherData(data){
            otherDayForecast += `
             <div class="weather_forecast_item">
                 <div class="day">${window.moment(day.dt*1000).format('ddd')}</div>
-              <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" class = "w_icon">
+              <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" class = "w_icon">
               <div class="temp">
                 temp-${day.main.temp}&#176; C
               </div>
@@ -105,7 +105,7 @@ function showWeatherData(data){
            otherDayForecast += `
             <div class="weather_forecast_item">
                 <div class="day">${window.moment(day.dt*1000).format('ddd')}</div>
-              <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" class = "w_icon">
+              <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" class = "w_icon">
 
               <div class="temp">
                 temp-${day.main.temp}&#176; C
@@ -118,7 +118,7 @@ function showWeatherData(data){
            otherDayForecast += `
             <div class="weather_forecast_item">
                 <div class="day">${window.moment(day.dt*1000).format('ddd')}</div>
-              <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" class = "w_icon">
+              <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" class = "w_icon">
 
               <div class="temp">
                 temp-${day.main.temp}&#176; C
@@ -131,7 +131,7 @@ function showWeatherData(data){
            otherDayForecast += `
             <div class="weather_forecast_item">
                 <div class="day">${window.moment(day.dt*1000).format('ddd')}</div>
-              <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" class = "w_icon">
+              <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" class = "w_icon">
 
               <div class="temp">
                 Temp-${day.main.temp}&#176; C
